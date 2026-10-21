@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Astral Audio — Generative Soundscapes & Deep Focus Synth</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Cinzel:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="stars-overlay"></div>
+  <div class="aurora-glow aurora-purple"></div>
+  <div class="aurora-glow aurora-indigo"></div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-wrap">
+      <a href="#" class="brand">
+        <span class="brand-orb">◎</span>
+        <span class="brand-text">ASTRAL<span>AUDIO</span></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#mixer">Sound Mixer</a>
+        <a href="#presets">Presets</a>
+        <a href="#about">About</a>
+        <a href="https://github.com/gvishnu006" target="_blank" rel="noopener" class="github-btn">GitHub</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="focus-pill">
+        <span class="pulse-dot"></span>
+        <span>Pure Web Audio API Synthesizer</span>
+      </div>
+
+      <h1 class="hero-title">
+        Immerse your mind in <span class="gradient-text">infinite soundscapes</span>.
+      </h1>
+
+      <p class="hero-desc">
+        A distraction-free generative audio engine designed to trigger deep flow states, alleviate digital fatigue, and elevate creative focus.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#mixer" class="btn btn-primary">Open Soundboard</a>
+        <a href="#presets" class="btn btn-secondary">Explore Presets</a>
+      </div>
+
+      <!-- Live Visualizer Canvas Placeholder -->
+      <div class="visualizer-wrapper">
+        <canvas id="visualizerCanvas" width="700" height="120"></canvas>
+        <div class="visualizer-status">
+          <span class="status-indicator">●</span>
+          <span>Audio Engine Ready</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sound Mixer Section -->
+  <section class="mixer-section" id="mixer">
+    <div class="container">
+      <div class="section-title">
+        <span class="eyebrow">CUSTOM SOUNDBOARD</span>
+        <h2>Blend your perfect acoustic atmosphere</h2>
+      </div>
+
+      <div class="sound-grid" id="soundGrid">
+        <div class="sound-channel" data-sound="rain">
+          <div class="sound-header">
+            <span class="sound-icon">🌧️</span>
+            <div>
+              <h3>Rainforest Drizzle</h3>
+              <p>Calming continuous rain precipitation</p>
+            </div>
+          </div>
+          <div class="slider-wrap">
+            <input type="range" min="0" max="100" value="0" class="vol-slider">
+            <span class="vol-value">Off</span>
+          </div>
+        </div>
+
+        <div class="sound-channel" data-sound="waves">
+          <div class="sound-header">
+            <span class="sound-icon">🌊</span>
+            <div>
+              <h3>Abyssal Waves</h3>
+              <p>Slow rolling deep ocean tidal swells</p>
+            </div>
+          </div>
+          <div class="slider-wrap">
+            <input type="range" min="0" max="100" value="0" class="vol-slider">
+            <span class="vol-value">Off</span>
+          </div>
+        </div>
+
+        <div class="sound-channel" data-sound="drone">
+          <div class="sound-header">
+            <span class="sound-icon">🪐</span>
+            <div>
+              <h3>Cosmic Drone (432Hz)</h3>
+              <p>Binaural resonant harmonic drone</p>
+            </div>
+          </div>
+          <div class="slider-wrap">
+            <input type="range" min="0" max="100" value="0" class="vol-slider">
+            <span class="vol-value">Off</span>
+          </div>
+        </div>
+
+        <div class="sound-channel" data-sound="fire">
+          <div class="sound-header">
+            <span class="sound-icon">🔥</span>
+            <div>
+              <h3>Ember Campfire</h3>
+              <p>Warm soothing wood embers crackle</p>
+            </div>
+          </div>
+          <div class="slider-wrap">
+            <input type="range" min="0" max="100" value="0" class="vol-slider">
+            <span class="vol-value">Off</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Preset Moods Section -->
+  <section class="presets-section" id="presets">
+    <div class="container">
+      <div class="section-title">
+        <span class="eyebrow">CURATED FLOW STATES</span>
+        <h2>One-click ambient presets</h2>
+      </div>
+
+      <div class="presets-grid">
+        <div class="preset-card" data-preset="deep-code">
+          <div class="preset-badge">High Focus</div>
+          <h3>Deep Code Terminal</h3>
+          <p>Cosmic drone tuned to alpha wave frequencies with gentle distant rainfall.</p>
+        </div>
+
+        <div class="preset-card" data-preset="night-library">
+          <div class="preset-badge">Calm</div>
+          <h3>Midnight Sanctuary</h3>
+          <p>Crackling hearth embers blended with subtle coastal shore tides.</p>
+        </div>
+
+        <div class="preset-card" data-preset="space-voyage">
+          <div class="preset-badge">Creativity</div>
+          <h3>Interstellar Drift</h3>
+          <p>Sub-bass celestial oscillation for lucid writing and visual problem solving.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="brand">
+        <span class="brand-orb">◎</span>
+        <span class="brand-text">ASTRAL<span>AUDIO</span></span>
+      </div>
+      <p>&copy; 2026 Astral Audio. Synthesized by <a href="https://github.com/gvishnu006" target="_blank" rel="noopener">gvishnu006</a>.</p>
+    </div>
+  </footer>
+</body>
+</html>
