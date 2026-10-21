@@ -8,9 +8,9 @@
 
 ## Core Features
 
-- 🌧️ **Multitrack Sound Mixer**: Independent volume gain controls for Rain, Ocean Waves, Cosmic Drone (432Hz), and Campfire Embers.
-- 🎵 **Pure Web Audio Synthesizer**: Procedurally generates soundscapes using white/pink noise buffer generators, bandpass filters, and low-frequency oscillators without external MP3 audio files.
-- 🌌 **Real-Time Canvas Frequency Visualizer**: Renders smooth audio waveforms and spectral frequency bars.
+- 🌧️ **Procedural Audio Synthesis**: Generates authentic rain (pink noise), rolling ocean swells (LFO modulated lowpass), cosmic drone (432Hz binaural beat), and campfire embers entirely in code without sample audio files.
+- 🎚️ **Multitrack Channel Mixer**: Smooth per-channel volume gain adjustments with real-time feedback.
+- 🌌 **Real-Time FFT Canvas Visualizer**: Connected to the Web Audio `AnalyserNode` to draw live harmonic frequencies.
 - 🧘 **Curated Presets**: Instantly trigger Deep Code, Midnight Sanctuary, or Interstellar Drift presets.
 
 ## Local Development
